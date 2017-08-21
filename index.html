@@ -637,29 +637,6 @@
   -H <span class="s2">"Authorization: Bearer b95b4f848cd226e55b7a42f6a8e8669350730270f5a91d64b6c70328b0156d75"</span>
 </code></pre>
 <blockquote>
-<p>Query Parameters</p>
-</blockquote>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>created_before</td>
-<td>none</td>
-<td>Returns only memberships created before the passed time. Time should be in iso8601 format (e.g. 2015-08-23T15:43:11-05:00)</td>
-</tr>
-<tr>
-<td>created_after</td>
-<td>none</td>
-<td>Returns only memberships created after the passed time. Time should be in iso8601 format (e.g. 2015-08-23T15:43:11-05:00)</td>
-</tr>
-</tbody></table>
-
-<blockquote>
 <p>Response:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
@@ -743,6 +720,16 @@
 <td>include_profile_question_responses</td>
 <td>false</td>
 <td>Passing &ldquo;true&rdquo; for this value will include profile questions and responses for each membership.</td>
+</tr>
+<tr>
+<td>created_before</td>
+<td>none</td>
+<td>Returns only memberships created before the passed time. Time should be in iso8601 format (e.g. 2015-08-23T15:43:11-05:00)</td>
+</tr>
+<tr>
+<td>created_after</td>
+<td>none</td>
+<td>Returns only memberships created after the passed time. Time should be in iso8601 format (e.g. 2015-08-23T15:43:11-05:00)</td>
 </tr>
 </tbody></table>
 
@@ -983,12 +970,12 @@
 <tr>
 <td>membership_id</td>
 <td>none</td>
-<td>Returns predictions for a single membership id</td>
+<td>Returns predictions for a single membership</td>
 </tr>
 <tr>
 <td>question_id</td>
 <td>none</td>
-<td>Returns predictions for a single membership id</td>
+<td>Returns predictions for a single question</td>
 </tr>
 <tr>
 <td>filter</td>
