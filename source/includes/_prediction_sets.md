@@ -1,7 +1,7 @@
 
-# Prediction Sets
+# Prediction Sets / Forecasts
 
-A prediction set is the primary model for storing forecasts within Cultivate Forecasts. A prediction set can contain a single prediction or multiple predictions, depending on the question type. In a prediction market, all prediction sets have a single prediction (a trade). In an opinion pool, prediction sets have one prediction for each answer in the question.
+A prediction set is the primary model for storing individual user forecasts within Cultivate Forecasts. A prediction set can contain a single prediction or multiple predictions, depending on the question type. In a prediction market, all prediction sets have a single prediction (a trade). In an opinion pool, prediction sets have one prediction for each answer in the question.
 
 ## Prediction Sets List
 
