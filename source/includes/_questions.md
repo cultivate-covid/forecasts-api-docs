@@ -191,7 +191,6 @@ include_challenge_ids | false | Passing "true" for this value will include an ar
 Parameter | Type | Description
 --------- | ------- | -----------
 id | integer | The id of the question
-discover_question_id | integer | The id of the discover question used to generate/publish this question, if collaborative question generation (Discover) is being used
 name | string | The question content
 type | string | The internal question type (e.g. prediction market, binary prediction market, opinion pool)
 site_id | integer | The id of the site that this question belongs to
@@ -220,20 +219,15 @@ scoring_end_time | datetime | The time at which scoring ends for this question.
 Parameter | Type | Description
 --------- | ------- | -----------
 id | integer | The id of the answer
-discover_answer_id | integer | The id of the discover answer used to generate/publish this question, if collaborative question generation (Discover) is being used
 created_at | datetime | The date & time that this answer was created
 updated_at | datetime | The date & time that this answer was last updated
 ends_at | datetime | The date & time that this answer stops accepting forecasts
 membership_id | integer | The id of the membership who created this answer
 name | string | The answer content
-outstanding | integer | If this question is a prediction market, this represents the number of outstanding shares in this stock
-positions_count | integer | The number of positions forecasters have taken in this answer
 predictions_count | integer | The number of predictions forecasters have made in this answer
 probability | float | The current consensus probability for this answer
 probability_formatted | string | The current consensus probability for this answer, formatted as a percentage
 question_id | integer | The id of the question that this answer belongs to
-refunded_at | datetime | If this question is a prediction market and this stock has been refunded, the date & time the refund occurred
-refunded_by_id | integer | The membership_id of the membership who refunded this stock
 resolved_at | datetime | The date & time that this answer was resolved
 resolved_by_id | integer | The memebership_id of the membership who resolved this answer
 correctness_known_at | datetime | The date & time that the correctness of this answer was known. If an administrator sets this value when resolving the answer, all forecasts made after it will be invalidated.
